@@ -54,27 +54,4 @@ class Phone(Field):
 
     
 if __name__ == "__main__":
-    name = Name('Bill')
-    phone = Phone('1234567890')
-    rec = Record(name, phone)
-    AB = AddressBook()
-    AB.add_record(rec)
-    assert isinstance(AB['Bill'], Record)
-    assert isinstance(AB['Bill'].name, Name)
-    assert isinstance(AB['Bill'].phones, list)
-    assert isinstance(AB['Bill'].phones[0], Phone)
-    assert AB['Bill'].phones[0].value == '1234567890'
-    print('All Ok)')
-
-    # name2 = Name('John')
-    # phone2 = Phone('51646516546')
-    # rec2 = Record(name2, phone2)
-    # AB.add_record(rec2)
-
-    # AB.show_all()
-    # # AB.del_record('Bill')
-    # # AB.show_all()
-
-    # print(phone2.value)
-    # print(AB['Bill'].phones)
-    # print(rec2.phones[0].value)
+    pass
